@@ -1,0 +1,1 @@
+{"version":1,"defects":{"MyTest::testMyTest":4,"MyTest::testMyWebsite":5,"Warning":6,"MyMathTest::testFibonacci":5,"MyMathTest::testFactorial":5},"times":{"MyTest::testMyTest":0.004,"MyTest::testMyWebsite":0,"Warning":0.001,"MyMathTest::testFibonacci":0.003,"MyMathTest::testFactorial":0}}
