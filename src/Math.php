@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace  mana;
 
+use InvalidArgumentException;
+
 class Math {
     public function fibonacci($n) {
         if (is_int($n) && $n > 0) {
@@ -16,13 +18,12 @@ class Math {
             }
             return $elements[$n];
         } else {
-            throw new
-            InvalidArgumentException('You should pass integer greater than 0');
+            throw new InvalidArgumentException('You should pass integer greater than 0');
         }
     }
 
     public function factorial($n) {
-        if (is_int($n) && $n >= 0) {
+        if (is_int($n) && $n > 0) {
             $factorial = 1;
             for ($i = 2; $i <= $n; $i++) {
                 $factorial *= $i;
