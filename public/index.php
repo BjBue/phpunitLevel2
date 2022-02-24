@@ -15,9 +15,9 @@ echo $app->sayHello();
 echo "<hr>";
 
 //the math
-echo "<h4>fibonacci of 55: ";
+echo "<h4>fibonacci of 25: ";
 $math = new math();
-echo $math->fibonacci(55);
+echo $math->fibonacci(25);
 echo "</h4>";
 
 echo "<hr>";
