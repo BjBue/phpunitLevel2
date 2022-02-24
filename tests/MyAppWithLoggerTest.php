@@ -17,9 +17,8 @@ class MyAppWithLoggerTest extends TestCase
         // erstellen des observer !! Dies ist der Mock !!
         $mock = $this->createMock(Logger::class);
         $mock->expects($this->once())
-            ->method('log')
-//            ->with('Application has started');
-            ->with('Applikation mit Logger gestartet');
+             ->method('log')
+             ->with('Applikation mit Logger gestartet');
 
         // start der Applikation mit Logger und dem Observer,
         // der sicherstellt, dass die log-Methode aufgerufen wird

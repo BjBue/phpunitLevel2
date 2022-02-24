@@ -21,8 +21,11 @@ class AnswerTest extends TestCase
             ->onlyMethods(["readUserInput"])
             ->getMock();
 
+        // Eine Alternative zum Einrichten einer Rückrufmethode kann darin bestehen,
+        // eine Liste gewünschter Rückgabewerte anzugeben.
+        // Das kann mit der $this->onConsecutiveCalls()-Methode gemacht werden
         $stub->method('readUserInput')
-            ->will($this->onConsecutiveCalls("yes","junk", "no", "Doof"));
+            ->will($this->onConsecutiveCalls("yes", "junk", "no", "Doof"));
 
         // stub gibt "yes" zurück
         $answer = $stub->getYesNoAnswer("Student? (yes/no)");
